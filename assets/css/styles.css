@@ -1,0 +1,58 @@
+/* Paleta azul base */
+:root {
+  --azul-escuro: #2c6365;      /* substitui o azul escuro */
+  --azul-medio: #7a9395;       /* substitui o azul médio */
+  --azul-claro: #bcd4d8;       /* substitui o azul claro */
+  --azul-bg: #e9e6ea;          /* substitui o fundo */
+  --azul-btn: #7a9395;         /* botão principal */
+  --azul-btn-hover: #2c6365;   /* botão hover */
+  --azul-borda: #a0b8bc;       /* bordas e detalhes */
+  --error-color: #ef4444;
+  --success-color: #22c55e;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--azul-bg) 0%, var(--azul-claro) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  border-radius: 2rem;
+  box-shadow: 0 8px 32px 0 rgba(60,60,60,0.13);
+  max-width: 400px;
+  width: 100%;
+  padding: 2rem;
+  background: #fff;
+  border: 1px solid var(--azul-borda);
+}
+
+.form-label {
+  color: var(--azul-escuro);
+  font-weight: 600;
+}
+
+.form-control:focus {
+  border-color: var(--azul-medio);
+  box-shadow: 0 0 0 0.2rem var(--azul-claro);
+}
+
+.btn-primary, .btn-primary:focus {
+  background-color: var(--azul-btn);
+  border-color: var(--azul-btn);
+  font-weight: 600;
+  border-radius: 2rem;
+  transition: background 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: var(--azul-btn-hover);
+  border-color: var(--azul-btn-hover);
+}
+
+.alert {
+  font-size: 0.95rem;
+  text-align: center;
+}
