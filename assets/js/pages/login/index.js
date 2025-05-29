@@ -48,7 +48,7 @@ import { auth, db } from '../../../js/main.js';
         
         // Redirecionar para hub.html após um breve delay
         setTimeout(() => {
-          window.location.href = '../../../../pages/hub.html';
+          window.location.href = '../../../../../pages/hub.html';
         }, 1000);
         
       } catch (error) {
